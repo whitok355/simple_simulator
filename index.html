@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"></link>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <head class="hd">
+            <h1 class="hd__title">Тренажер<span id="hd_title"></span></h1>
+        </head>
+        <main class="bd">
+            <div class="bd__element top invis">
+                <h2 class="top__element top__title"> Результаты</span></h2>
+                <div class="top__element res">
+                    <div class="res__row">Всего дано ответов: <span class="res__value" id="total">0</span></div>
+                    <div class="res__row">Правильных ответов: <span class="res__value" id="right">0</span></div>
+                    <div class="res__row">Неправильных ответов: <span class="res__value" id="wrong">0</span></div>
+                </div>
+            </div>
+            <div class="bd__element center">
+                <form class="center__element route" name="route" id="form_route">
+                    <div class="route__box"><label class="route__el">Деление </label> <input class="route__inp" type="text" placeholder="Введи делитель" id="divider"> <input class="route__radion"  name="operation" type="radio" id="division"> </div>
+                    <div class="route__box"><label class="route__el">Умножение</label> <input class="route__inp" type="text" placeholder="Укажи множитель" id="multiplier"> <input class="route__radion"  name="operation" type="radio" id="multiplication"> </div>
+                    <div class="route__box"><label class="route__el">Сложение</label> <input class="route__inp" type="text" placeholder="Укажи слагаемое" id="summand"><input class="route__radion"  name="operation" type="radio" id="addition"></div>
+                    <div class="route__box"><label class="route__el">Вычетание</label> <input class="route__inp" type="text" placeholder="Укажи вычитаемое" id="deductible"><input class="route__radion"  name="operation" type="radio" id="subtraction"></div>
+                </form>
+                <form class="center__element example invis" name="game" id="form_game">
+                    <label class="example__task" id="example"></label>
+                    <input class="example__answer" id="answer" placeholder="Введи ответ"></input>
+                    <input type="submit" class="example__submit" id="submit" name="game">
+                </form>
+                <div class="center__check invis invis" id="check"></div>
+                <div class="center__btn btn invis">
+                    <button class="btn__btn" id="close">Выйти</button>
+                </div>
+            </div>
+        </main>
+        <footer class="ft">
+            <div class="ft__box pic-box">
+                <img class="pic-box__img invis" src="" id="emotion">
+            </div>
+        </footer>
+    </div>
+    <script src="./script/Emotion.js"></script>
+    <script src="./script/Checker.js"></script>
+    <script src="./script/Addition.js"></script>
+    <script src="./script/Subtraction.js"></script>
+    <script src="./script/Multiplication.js"></script>
+    <script src="./script/Division.js"></script>
+    <script src="./script/CalcResult.js"></script>
+    <script src="./script/Route.js"></script>
+    <script src="./script/Page.js"></script>
+    <script src="./script/Script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+:root{
+    --mgt: 20px;
+}
+
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    background: rgb(205, 204, 204);
+}
+.wrapper{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    padding: 30px;
+}
+.hd__title{
+    text-transform: uppercase;
+}
+.bd{
+    margin-top: var(--mgt);
+}
+
+.bd__element{
+    margin-top: var(--mgt);
+}
+.top__element{
+    margin-top: var(--mgt);
+}
+.top__title{
+    text-decoration: underline;
+}
+.example{
+    display: flex;
+    align-items: center;
+}
+.res{
+    text-align: left;
+}
+.center__element{
+    margin-top: var(--mgt);
+}
+.task{
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+.example__task {
+    font-size: 50px;
+    margin-right: 20px;
+}
+.example__answer{
+    border-radius: 100px;
+    text-align: center;
+    margin-right: 10px;
+    padding: 10px 20px; 
+}
+.example__submit{
+    border-radius: 100px;
+    text-align: center;
+    padding: 10px 20px; 
+}
+.center__check{
+    margin-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.center__check--right{
+    color: green;
+}
+.center__check--false{
+    color: red;
+}
+.route{
+    display: flex;
+    flex-direction: column;
+}
+.invis{
+    display: none;
+}
+.route__el{
+    grid-area: el;
+    margin-left: 0;
+    font-size: 1.5em;
+}
+.route__radion{
+    grid-area: radio;
+}
+.route__inp{
+    grid-area: inp;
+    padding: 5px;
+}
+.route__box{
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 20px;
+    justify-content: center;
+    grid-template-areas: 
+    "el inp radio"
+    "el inp radio"
+    "el . radio"
+    "el . radio";
+    margin-top: var(--mgt);
+    min-width: 400px;
+}
+.center__btn{
+    margin-top: var(--mgt);
+}
+.btn__btn{
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 100px;
+}
+.ft{
+    margin-top: var(--mgt);
+}
+.pic-box{
+    width: 300px;
+    height: 300px;
+}
+.pic-box__img{
+    border-radius: 500px;
+    max-width: 100%;
+    max-height: 100%;
+}
+.err{
+    font-size: 16px;
+    color:red;
+}
